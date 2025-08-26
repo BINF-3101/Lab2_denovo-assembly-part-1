@@ -39,13 +39,13 @@ The genomes that are currently publically available were described in this paper
 &nbsp;
 ## Step 2: Choose a genome
 
-To choose a species you will "sample" from the "environments" that are brought to class. 
+To choose a species you will "sample" from the "environments" in the yeast hunter activity. 
 
 Some species are _human pathogens_ while others are used to make _food or drink_.
 
-Once you have your species name, you will find the SRA number and more details about your species at this link. Please put your name next to your species
+Once you have your species name, you will also need to input the SRR number. 
 
-SPECIES SIGN UP SHEET: https://docs.google.com/spreadsheets/d/1AIT-GHvhBJoh7BDy-Ee5fLxVRKuSfp8hqoU4H4CEA9s/edit?usp=sharing 
+SPECIES SIGN UP SHEET: [https://docs.google.com/spreadsheets/d/1AIT-GHvhBJoh7BDy-Ee5fLxVRKuSfp8hqoU4H4CEA9s/edit?usp=sharing ](https://docs.google.com/spreadsheets/d/1EuW_gBTT3Epl0tYhHk68UUEkpcYa0N2Q1w90fKzuhr8/edit?usp=drive_link)
 
 &nbsp;
 
@@ -58,7 +58,7 @@ This also means **whenever you see SRRXXXXXX in the commands, you will replace i
 
 &nbsp;
 ## LQ1
-**What is the name of the species you chose?**
+**What is the name of the species you found?**
 &nbsp;
 ## LQ2
 **What is the SRA Run identifier of the species you chose?**
@@ -220,54 +220,20 @@ This will generate a number of files with the ```fastqc``` in the name. We are i
 
 ### Step 5b: Analyze fastqc results
 
-To analyze the fastq files you will need to download the **html** files that were created. 
+This analysis will generate two output files we want to analyze
 
-Downloading is essentially the reverse of uploading! Here are instructions how to download a file on the various platforms
+Analysis of reads 1: `SRRXXXXXX_1_paired_fastqc.zip`
+Analysis of reads 2: `SRRXXXXXX_2_paired_fastqc.zip`
 
-#### Download on a mac
-
-- Open a new terminal shell and _do not_ log into the cluster
-- use ```scp``` do download the file using a command such as
+We need to **unzip** these folders
 
 ```bash
-scp username@hpc-student.charlotte.edu:lab_2/SRRXXXXXX/SRRXXXXXX_1_paired_fastqc.html /path/to/directory/on/your/computer
+#unzip
+unzip SRRXXXXXX_1_paired_fastqc.zip
+
+unzip SRRXXXXXX_2_paired_fastqc.zip
 ```
 
-#### Download on Windows with Ubuntu
-
-To access your local computer from Ubuntu you need to find your local computer in the /mnt/ directory.
-
-```bash
-scp username@hpc-student.charlotte.edu:lab_2/SRRXXXXXX/SRRXXXXXX_1_paired_fastqc.html /mnt/c/Users/local/laptop/directory
-```
-
-#### Download on Windows with PSFTP
-
-Start up PSFTP. You can do this by searching PSFTP in the search bar
-
-Then log into the cluster using the command ```open username@hpc-student.charlotte.edu```
-
-Check your local directory using ```!dir```
-
-This is where your file will be placed. I suggest you change that to your desktop using the "local change directory" command ```lcd lcd C:\Users\laptopUserName\Desktop```
-
-
-Check your remote directory using ```pwd```
-
-Move into the folder containing the file using change directory ```cd lab_2/SRRXXXXXX```
-
-Now you can download the file using this command 
-
-```get SRRXXXXXX_1_paired_fastqc.html```
-
-The file will be in your desktop
-
-
-&nbsp;
-
-Once you have them open you will be able to see the summary report for your paired reads. You **may not get all green check marks** for quality. That is ok! We could go back and re-run trimmomatic again, but these should be good enough to move foward. 
-
-&nbsp;
 
 ## LQ6
 **What are the scores you got for your genomes across the various statistics?**
