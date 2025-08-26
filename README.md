@@ -234,22 +234,22 @@ unzip SRRXXXXXX_1_paired_fastqc.zip
 unzip SRRXXXXXX_2_paired_fastqc.zip
 ```
 
+This will create two new folders `SRRXXXXXX_1_paired_fastqc` and `SRRXXXXXX_2_paired_fastqc`
+
+In _each_ folder you will find a file called `summary.txt`
+
+View the `summary.txt` files to answer the questions below. 
+
+
 
 ## LQ6
 **What are the scores you got for your genomes across the various statistics?**
 
-The statistics (regardless of what Canvas says) are
+Report the following three statistics for _each_ of your reads. The Canvas will be fill in the blank
 
 - Basic Statistics
-- Per base sequence quality
-- Per sequence quality scores
-- Per base sequence content
 - Per sequence GC content
-- Per base N content
-- Sequence Length Distribution
 - Sequence Duplication Levels
-- Overrepresented sequences
-- Adapter Content
 
 &nbsp;
 # Commands and Software
