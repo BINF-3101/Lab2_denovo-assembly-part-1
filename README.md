@@ -43,7 +43,7 @@ To choose a species you will "sample" from the "environments" in the yeast hunte
 
 Some species are _human pathogens_ while others are used to make _food or drink_.
 
-Once you have your species name, you will also need to input the SRR number. 
+You must complete the **yeast hunter** activity first! https://github.com/BINF-3101/yeast_hunter 
 
 SPECIES SIGN UP SHEET: [https://docs.google.com/spreadsheets/d/1AIT-GHvhBJoh7BDy-Ee5fLxVRKuSfp8hqoU4H4CEA9s/edit?usp=sharing ](https://docs.google.com/spreadsheets/d/1EuW_gBTT3Epl0tYhHk68UUEkpcYa0N2Q1w90fKzuhr8/edit?usp=drive_link)
 
