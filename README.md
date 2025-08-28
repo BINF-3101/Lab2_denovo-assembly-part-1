@@ -163,7 +163,7 @@ Follow these steps to run trimmomatic
 &nbsp;
 - Copy the slurm (trimmomatic.slurm) script to your working directory (it must be in the same directory as your files)
    ```bash
-   cp /projects/class/binf3101_001/trimmomatic.slurm .
+   cp /projects/class/binf3101_001/lab_2/trimmomatic.slurm .
    ```
 &nbsp;
 - Edit the slurm script so that it will analyze the genome that you chose - you can use vi or nano
